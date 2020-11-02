@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/desciptor_fetch_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="desciptor_fetch" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/desciptor_fetch/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/rstb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rstb</obj_property>
+      <obj_property name="ObjectShortName">rstb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/addr_1stdescp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_1stdescp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_1stdescp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/dma_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_start</obj_property>
+      <obj_property name="ObjectShortName">dma_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/length_descp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">length_descp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">length_descp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/ack_fetch_descp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ack_fetch_descp</obj_property>
+      <obj_property name="ObjectShortName">ack_fetch_descp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/descpdata_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">descpdata_valid</obj_property>
+      <obj_property name="ObjectShortName">descpdata_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/descp_dword1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">descp_dword1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">descp_dword1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/descp_dword2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">descp_dword2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">descp_dword2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/descp_dword3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">descp_dword3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">descp_dword3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/despfifo_roomavail" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">despfifo_roomavail</obj_property>
+      <obj_property name="ObjectShortName">despfifo_roomavail</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/valid_bit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">valid_bit</obj_property>
+      <obj_property name="ObjectShortName">valid_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/link_bit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">link_bit</obj_property>
+      <obj_property name="ObjectShortName">link_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/fetch_descp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_descp</obj_property>
+      <obj_property name="ObjectShortName">fetch_descp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/addr_descp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_descp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_descp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/descpfifo_wren" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">descpfifo_wren</obj_property>
+      <obj_property name="ObjectShortName">descpfifo_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/fetch_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/fetch_state_nxt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_state_nxt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_state_nxt[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/fetch_descp_nxt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_descp_nxt</obj_property>
+      <obj_property name="ObjectShortName">fetch_descp_nxt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/addr_descp_nxt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_descp_nxt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_descp_nxt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[1:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/counter_nxt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_nxt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_nxt[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/IDLE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/WAIT_ACK" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WAIT_ACK[1:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT_ACK[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/WAIT_DESCP" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WAIT_DESCP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT_DESCP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/desciptor_fetch/CHECK_FIFOROOM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CHECK_FIFOROOM[1:0]</obj_property>
+      <obj_property name="ObjectShortName">CHECK_FIFOROOM[1:0]</obj_property>
+   </wvobject>
+</wave_config>

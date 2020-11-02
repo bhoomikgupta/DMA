@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/testbench_top_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/testbench_top/clk2x" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk2x</obj_property>
+      <obj_property name="ObjectShortName">clk2x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/dma_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_start</obj_property>
+      <obj_property name="ObjectShortName">dma_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/fetch_descp1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_descp1</obj_property>
+      <obj_property name="ObjectShortName">fetch_descp1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/addr_descp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_descp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_descp[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/length_descp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">length_descp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">length_descp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/ack_fetch_descp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ack_fetch_descp</obj_property>
+      <obj_property name="ObjectShortName">ack_fetch_descp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/descpdata_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">descpdata_valid</obj_property>
+      <obj_property name="ObjectShortName">descpdata_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/addr_1stdescp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_1stdescp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_1stdescp[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/descp_dword0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">descp_dword0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">descp_dword0[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/descp_dword1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">descp_dword1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">descp_dword1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/descp_dword2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">descp_dword2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">descp_dword2[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/descp_dword3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">descp_dword3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">descp_dword3[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/link_bit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">link_bit</obj_property>
+      <obj_property name="ObjectShortName">link_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/fetch_data1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_data1</obj_property>
+      <obj_property name="ObjectShortName">fetch_data1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/addr_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/length_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">length_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">length_data[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/ack_fetch_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ack_fetch_data</obj_property>
+      <obj_property name="ObjectShortName">ack_fetch_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/datafifo_datavalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">datafifo_datavalid</obj_property>
+      <obj_property name="ObjectShortName">datafifo_datavalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/datafifo_wrdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datafifo_wrdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datafifo_wrdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/datafifo_dataavail1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datafifo_dataavail1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">datafifo_dataavail1[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/datafifo_rddata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datafifo_rddata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datafifo_rddata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/rstb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rstb</obj_property>
+      <obj_property name="ObjectShortName">rstb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/add_room" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">add_room</obj_property>
+      <obj_property name="ObjectShortName">add_room</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/add_value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">add_value[7:0]</obj_property>
+      <obj_property name="ObjectShortName">add_value[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/datafifo_rden" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">datafifo_rden</obj_property>
+      <obj_property name="ObjectShortName">datafifo_rden</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/count_descp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count_descp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">count_descp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/CLKTB_HALF_PERIOD" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">CLKTB_HALF_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLKTB_HALF_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/RST_DEASSERT_DLY" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RST_DEASSERT_DLY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RST_DEASSERT_DLY[31:0]</obj_property>
+   </wvobject>
+</wave_config>

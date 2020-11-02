@@ -1,0 +1,5 @@
+vhdtdtfi -lang verilog -prj DMA -o C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/asynch_fifo.tfi -lib work C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA//asynch_fifo.v -module asynch_fifo -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/asynch_fifo.xst" -ofn "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/asynch_fifo.syr" 
+xst -intstyle ise -ifn "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/asynch_fifo.xst" -ofn "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/asynch_fifo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 asynch_fifo.ngc asynch_fifo.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o asynch_fifo_map.ncd asynch_fifo.ngd asynch_fifo.pcf 

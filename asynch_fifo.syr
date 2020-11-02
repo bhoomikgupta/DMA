@@ -1,0 +1,593 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Reading design: asynch_fifo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "asynch_fifo.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "asynch_fifo"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : asynch_fifo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "sram.v" in library work
+Compiling verilog file "gray_to_binary.v" in library work
+Module <sram> compiled
+Compiling verilog file "binary_to_gray.v" in library work
+Module <gray_to_binary> compiled
+Compiling verilog file "asynch_fifo.v" in library work
+Module <binary_to_gray> compiled
+Module <asynch_fifo> compiled
+No errors in compilation
+Analysis of file <"asynch_fifo.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <asynch_fifo> in library <work> with parameters.
+	FIFO_DEPTH = "00000000000000000000000000010000"
+	FIFO_PTR = "00000000000000000000000000000100"
+	FIFO_TWICEDEPTH_MINUS1 = "00000000000000000000000000011111"
+	FIFO_WIDTH = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <binary_to_gray> in library <work> with parameters.
+	PTR = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <gray_to_binary> in library <work> with parameters.
+	PTR = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <sram> in library <work> with parameters.
+	A_MAX = "00000000000000000000000000010000"
+	FIFO_PTR = "00000000000000000000000000000100"
+	FIFO_WIDTH = "00000000000000000000000000100000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <asynch_fifo>.
+	FIFO_DEPTH = 32'sb00000000000000000000000000010000
+	FIFO_PTR = 32'sb00000000000000000000000000000100
+	FIFO_TWICEDEPTH_MINUS1 = 32'sb00000000000000000000000000011111
+	FIFO_WIDTH = 32'sb00000000000000000000000000100000
+Module <asynch_fifo> is correct for synthesis.
+ 
+Analyzing module <binary_to_gray> in library <work>.
+	PTR = 32'sb00000000000000000000000000000100
+Module <binary_to_gray> is correct for synthesis.
+ 
+Analyzing module <gray_to_binary> in library <work>.
+	PTR = 32'sb00000000000000000000000000000100
+Module <gray_to_binary> is correct for synthesis.
+ 
+Analyzing module <sram> in library <work>.
+	A_MAX = 32'sb00000000000000000000000000010000
+	FIFO_PTR = 32'sb00000000000000000000000000000100
+	FIFO_WIDTH = 32'sb00000000000000000000000000100000
+Module <sram> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <binary_to_gray>.
+    Related source file is "binary_to_gray.v".
+    Found 4-bit xor2 for signal <gray_value<3:0>>.
+Unit <binary_to_gray> synthesized.
+
+
+Synthesizing Unit <gray_to_binary>.
+    Related source file is "gray_to_binary.v".
+    Found 4-bit xor2 for signal <binary_value<3:0>>.
+Unit <gray_to_binary> synthesized.
+
+
+Synthesizing Unit <sram>.
+    Related source file is "sram.v".
+    Found 16x32-bit dual-port RAM <Mram_memory> for signal <memory>.
+    Found 32-bit register for signal <rddata>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <sram> synthesized.
+
+
+Synthesizing Unit <asynch_fifo>.
+    Related source file is "asynch_fifo.v".
+WARNING:Xst:646 - Signal <rd_ptr_wab_wrclk<4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 5-bit register for signal <data_avail>.
+    Found 1-bit register for signal <fifo_empty>.
+    Found 1-bit register for signal <fifo_full>.
+    Found 5-bit register for signal <room_avail>.
+    Found 5-bit adder for signal <data_avail_nxt$addsub0000> created at line 229.
+    Found 5-bit subtractor for signal <data_avail_nxt$addsub0001> created at line 229.
+    Found 6-bit subtractor for signal <data_avail_nxt$sub0000> created at line 229.
+    Found 1-bit xor2 for signal <data_avail_nxt$xor0000> created at line 229.
+    Found 5-bit comparator equal for signal <fifo_empty_nxt>.
+    Found 4-bit comparator equal for signal <fifo_full_nxt$cmp_eq0000> created at line 222.
+    Found 1-bit xor2 for signal <fifo_full_nxt$xor0000> created at line 222.
+    Found 5-bit register for signal <rd_ptr_snapshot_value>.
+    Found 5-bit register for signal <rd_ptr_wab>.
+    Found 5-bit register for signal <rd_ptr_wab_gray>.
+    Found 5-bit register for signal <rd_ptr_wab_gray_sync1>.
+    Found 5-bit register for signal <rd_ptr_wab_gray_sync2>.
+    Found 5-bit adder for signal <rd_ptr_wab_nxt$addsub0000> created at line 135.
+    Found 5-bit register for signal <rd_ptr_wab_wrclk>.
+    Found 5-bit subtractor for signal <room_avail_nxt$addsub0000> created at line 224.
+    Found 5-bit adder for signal <room_avail_nxt$addsub0001> created at line 224.
+    Found 6-bit subtractor for signal <room_avail_nxt$sub0000> created at line 224.
+    Found 1-bit xor2 for signal <room_avail_nxt$xor0000> created at line 224.
+    Found 5-bit register for signal <wr_ptr_snapshot_value>.
+    Found 5-bit register for signal <wr_ptr_wab>.
+    Found 5-bit register for signal <wr_ptr_wab_gray>.
+    Found 5-bit register for signal <wr_ptr_wab_gray_sync1>.
+    Found 5-bit register for signal <wr_ptr_wab_gray_sync2>.
+    Found 5-bit adder for signal <wr_ptr_wab_nxt$addsub0000> created at line 53.
+    Found 5-bit register for signal <wr_ptr_wab_rdclk>.
+    Summary:
+	inferred  72 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <asynch_fifo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x32-bit dual-port RAM                               : 1
+# Adders/Subtractors                                   : 8
+ 5-bit adder                                           : 4
+ 5-bit subtractor                                      : 2
+ 6-bit subtractor                                      : 2
+# Registers                                            : 17
+ 1-bit register                                        : 2
+ 32-bit register                                       : 1
+ 5-bit register                                        : 14
+# Comparators                                          : 2
+ 4-bit comparator equal                                : 1
+ 5-bit comparator equal                                : 1
+# Xors                                                 : 19
+ 1-bit xor2                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <rd_ptr_wab_wrclk_4> of sequential type is unconnected in block <asynch_fifo>.
+
+Synthesizing (advanced) Unit <sram>.
+INFO:Xst:3231 - The small RAM <Mram_memory> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 32-bit                    |          |
+    |     clkA           | connected to signal <wrclk>         | rise     |
+    |     weA            | connected to signal <wren>          | high     |
+    |     addrA          | connected to signal <wrptr>         |          |
+    |     diA            | connected to signal <wrdata>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 32-bit                    |          |
+    |     addrB          | connected to signal <rdptr>         |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <sram> synthesized (advanced).
+WARNING:Xst:2677 - Node <rd_ptr_wab_wrclk_4> of sequential type is unconnected in block <asynch_fifo>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x32-bit dual-port distributed RAM                   : 1
+# Adders/Subtractors                                   : 8
+ 5-bit adder                                           : 4
+ 5-bit subtractor                                      : 4
+# Registers                                            : 103
+ Flip-Flops                                            : 103
+# Comparators                                          : 2
+ 4-bit comparator equal                                : 1
+ 5-bit comparator equal                                : 1
+# Xors                                                 : 19
+ 1-bit xor2                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <rd_ptr_wab_4> in Unit <asynch_fifo> is equivalent to the following FF/Latch, which will be removed : <rd_ptr_wab_gray_4> 
+INFO:Xst:2261 - The FF/Latch <wr_ptr_wab_4> in Unit <asynch_fifo> is equivalent to the following FF/Latch, which will be removed : <wr_ptr_wab_gray_4> 
+
+Optimizing unit <asynch_fifo> ...
+
+Optimizing unit <sram> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block asynch_fifo, actual ratio is 3.
+FlipFlop rd_ptr_wab_0 has been replicated 1 time(s)
+FlipFlop rd_ptr_wab_1 has been replicated 1 time(s)
+FlipFlop rd_ptr_wab_2 has been replicated 1 time(s)
+FlipFlop wr_ptr_wab_0 has been replicated 2 time(s)
+FlipFlop wr_ptr_wab_1 has been replicated 1 time(s)
+FlipFlop wr_ptr_wab_2 has been replicated 2 time(s)
+FlipFlop wr_ptr_wab_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 110
+ Flip-Flops                                            : 110
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : asynch_fifo.ngr
+Top Level Output File Name         : asynch_fifo
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 88
+
+Cell Usage :
+# BELS                             : 96
+#      INV                         : 2
+#      LUT2                        : 22
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 13
+#      LUT3_D                      : 3
+#      LUT3_L                      : 3
+#      LUT4                        : 35
+#      LUT4_D                      : 7
+#      LUT4_L                      : 9
+# FlipFlops/Latches                : 110
+#      FDC                         : 67
+#      FDCE                        : 10
+#      FDE                         : 32
+#      FDP                         : 1
+# RAMS                             : 32
+#      RAM16X1D                    : 32
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 86
+#      IBUF                        : 42
+#      OBUF                        : 44
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                      112  out of   3584     3%  
+ Number of Slice Flip Flops:            110  out of   7168     1%  
+ Number of 4 input LUTs:                160  out of   7168     2%  
+    Number used as logic:                96
+    Number used as RAMs:                 64
+ Number of IOs:                          88
+ Number of bonded IOBs:                  88  out of    141    62%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+wrclk                              | BUFGP                  | 72    |
+rdclk                              | BUFGP                  | 70    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------+------------------------+-------+
+Control Signal                         | Buffer(FF name)        | Load  |
+---------------------------------------+------------------------+-------+
+rstb_wrclk_inv(rstb_wrclk_inv1_INV_0:O)| NONE(fifo_full)        | 40    |
+rstb_rdclk_inv(rstb_rdclk_inv1_INV_0:O)| NONE(data_avail_0)     | 38    |
+---------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.180ns (Maximum Frequency: 139.275MHz)
+   Minimum input arrival time before clock: 8.253ns
+   Maximum output required time after clock: 6.216ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'wrclk'
+  Clock period: 7.180ns (frequency: 139.275MHz)
+  Total number of paths / destination ports: 436 / 163
+-------------------------------------------------------------------------
+Delay:               7.180ns (Levels of Logic = 5)
+  Source:            wr_ptr_wab_2_1 (FF)
+  Destination:       fifo_full (FF)
+  Source Clock:      wrclk rising
+  Destination Clock: wrclk rising
+
+  Data Path: wr_ptr_wab_2_1 to fifo_full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.915  wr_ptr_wab_2_1 (wr_ptr_wab_2_1)
+     LUT4:I1->O            1   0.479   0.704  wr_ptr_wab_nxt<1>1112 (wr_ptr_wab_nxt<1>1112)
+     LUT4_D:I3->O          3   0.479   0.830  wr_ptr_wab_nxt<1>1130 (N10)
+     LUT4:I2->O            3   0.479   0.830  wr_ptr_wab_nxt<4> (wr_ptr_wab_nxt<4>)
+     LUT4:I2->O            1   0.479   0.704  fifo_full_nxt82_SW0 (N50)
+     LUT4:I3->O            1   0.479   0.000  fifo_full_nxt82 (fifo_full_nxt)
+     FDC:D                     0.176          fifo_full
+    ----------------------------------------
+    Total                      7.180ns (3.197ns logic, 3.983ns route)
+                                       (44.5% logic, 55.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'rdclk'
+  Clock period: 7.156ns (frequency: 139.744MHz)
+  Total number of paths / destination ports: 415 / 65
+-------------------------------------------------------------------------
+Delay:               7.156ns (Levels of Logic = 5)
+  Source:            rd_ptr_wab_2_1 (FF)
+  Destination:       fifo_empty (FF)
+  Source Clock:      rdclk rising
+  Destination Clock: rdclk rising
+
+  Data Path: rd_ptr_wab_2_1 to fifo_empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.915  rd_ptr_wab_2_1 (rd_ptr_wab_2_1)
+     LUT4:I1->O            1   0.479   0.704  rd_ptr_wab_nxt<1>1112 (rd_ptr_wab_nxt<1>1112)
+     LUT4_D:I3->O          3   0.479   0.794  rd_ptr_wab_nxt<1>1130 (N9)
+     LUT4:I3->O            5   0.479   0.806  rd_ptr_wab_nxt<1> (rd_ptr_wab_nxt<1>)
+     LUT4:I3->O            1   0.479   0.740  fifo_empty_nxt562 (fifo_empty_nxt562)
+     LUT4:I2->O            1   0.479   0.000  fifo_empty_nxt579 (fifo_empty_nxt)
+     FDP:D                     0.176          fifo_empty
+    ----------------------------------------
+    Total                      7.156ns (3.197ns logic, 3.959ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'wrclk'
+  Total number of paths / destination ports: 198 / 85
+-------------------------------------------------------------------------
+Offset:              8.253ns (Levels of Logic = 6)
+  Source:            write_en (PAD)
+  Destination:       fifo_full (FF)
+  Destination Clock: wrclk rising
+
+  Data Path: write_en to fifo_full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            38   0.715   1.899  write_en_IBUF (write_en_IBUF)
+     LUT4:I0->O            1   0.479   0.704  wr_ptr_wab_nxt<1>1112 (wr_ptr_wab_nxt<1>1112)
+     LUT4_D:I3->O          3   0.479   0.830  wr_ptr_wab_nxt<1>1130 (N10)
+     LUT4:I2->O            3   0.479   0.830  wr_ptr_wab_nxt<4> (wr_ptr_wab_nxt<4>)
+     LUT4:I2->O            1   0.479   0.704  fifo_full_nxt82_SW0 (N50)
+     LUT4:I3->O            1   0.479   0.000  fifo_full_nxt82 (fifo_full_nxt)
+     FDC:D                     0.176          fifo_full
+    ----------------------------------------
+    Total                      8.253ns (3.286ns logic, 4.967ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rdclk'
+  Total number of paths / destination ports: 151 / 50
+-------------------------------------------------------------------------
+Offset:              8.234ns (Levels of Logic = 6)
+  Source:            read_en (PAD)
+  Destination:       fifo_empty (FF)
+  Destination Clock: rdclk rising
+
+  Data Path: read_en to fifo_empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   0.715   1.904  read_en_IBUF (read_en_IBUF)
+     LUT4:I0->O            1   0.479   0.704  rd_ptr_wab_nxt<1>1112 (rd_ptr_wab_nxt<1>1112)
+     LUT4_D:I3->O          3   0.479   0.794  rd_ptr_wab_nxt<1>1130 (N9)
+     LUT4:I3->O            5   0.479   0.806  rd_ptr_wab_nxt<1> (rd_ptr_wab_nxt<1>)
+     LUT4:I3->O            1   0.479   0.740  fifo_empty_nxt562 (fifo_empty_nxt562)
+     LUT4:I2->O            1   0.479   0.000  fifo_empty_nxt579 (fifo_empty_nxt)
+     FDP:D                     0.176          fifo_empty
+    ----------------------------------------
+    Total                      8.234ns (3.286ns logic, 4.948ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'rdclk'
+  Total number of paths / destination ports: 38 / 38
+-------------------------------------------------------------------------
+Offset:              6.216ns (Levels of Logic = 1)
+  Source:            fifo_empty (FF)
+  Destination:       fifo_empty (PAD)
+  Source Clock:      rdclk rising
+
+  Data Path: fifo_empty to fifo_empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.626   0.681  fifo_empty (fifo_empty_OBUF)
+     OBUF:I->O                 4.909          fifo_empty_OBUF (fifo_empty)
+    ----------------------------------------
+    Total                      6.216ns (5.535ns logic, 0.681ns route)
+                                       (89.0% logic, 11.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'wrclk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              6.216ns (Levels of Logic = 1)
+  Source:            fifo_full (FF)
+  Destination:       fifo_full (PAD)
+  Source Clock:      wrclk rising
+
+  Data Path: fifo_full to fifo_full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.626   0.681  fifo_full (fifo_full_OBUF)
+     OBUF:I->O                 4.909          fifo_full_OBUF (fifo_full)
+    ----------------------------------------
+    Total                      6.216ns (5.535ns logic, 0.681ns route)
+                                       (89.0% logic, 11.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.48 secs
+ 
+--> 
+
+Total memory usage is 4521404 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,4 @@
+verilog work "sram.v"
+verilog work "gray_to_binary.v"
+verilog work "binary_to_gray.v"
+verilog work "asynch_fifo.v"

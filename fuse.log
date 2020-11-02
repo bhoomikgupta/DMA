@@ -1,0 +1,38 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/testbench_top_isim_beh.exe -prj C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/testbench_top_beh.prj work.testbench_top work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/sram.v" into library work
+Analyzing Verilog file "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/gray_to_binary.v" into library work
+Analyzing Verilog file "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/binary_to_gray.v" into library work
+Analyzing Verilog file "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/roomavail_calc.v" into library work
+Analyzing Verilog file "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/descriptor_process.v" into library work
+Analyzing Verilog file "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/descriptor_fetch.v" into library work
+Analyzing Verilog file "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/asynch_fifo.v" into library work
+Analyzing Verilog file "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/dmardtop.v" into library work
+Analyzing Verilog file "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/test1.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module descriptor_fetch
+Compiling module descriptor_process
+Compiling module roomavail_calc
+Compiling module binary_to_gray(PTR=4)
+Compiling module gray_to_binary(PTR=4)
+Compiling module sram(FIFO_PTR=4,FIFO_WIDTH=64)
+Compiling module asynch_fifo(FIFO_PTR=4,FIFO_WIDT...
+Compiling module binary_to_gray(PTR=8)
+Compiling module gray_to_binary(PTR=8)
+Compiling module sram(FIFO_PTR=8,FIFO_WIDTH=32)
+Compiling module asynch_fifo(FIFO_PTR=8,FIFO_WIDT...
+Compiling module dmardtop
+Compiling module testbench_top
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\testbench_top_isim_beh.exe.sim\libPortability.dll".
+Compiled 14 Verilog Units
+Built simulation executable C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/testbench_top_isim_beh.exe
+Fuse Memory Usage: 28908 KB
+Fuse CPU Usage: 718 ms

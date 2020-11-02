@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/gray_to_binary.xst" -ofn "C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/gray_to_binary.syr" 

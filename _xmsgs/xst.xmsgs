@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">descp_dword0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">descp_dword1</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">descp_dword2&lt;31:2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="2117" delta="old" >HDL ADVISOR - Mux Selector &lt;<arg fmt="%s" index="1">fetch_state</arg>&gt; of Case statement line <arg fmt="%s" index="2">67</arg> was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+	- add an &apos;<arg fmt="%s" index="3">INIT</arg>&apos; attribute on signal &lt;<arg fmt="%s" index="4">fetch_state</arg>&gt; (optimization is then done without any risk)
+	- use the attribute &apos;<arg fmt="%s" index="5">signal_encoding</arg> <arg fmt="%s" index="6">user</arg>&apos; to avoid onehot optimization
+	- use the attribute &apos;<arg fmt="%s" index="7">safe_implementation</arg> <arg fmt="%s" index="8">yes</arg>&apos; to force XST to perform a safe (but less efficient) optimization
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rd_ptr_wab_wrclk&lt;4&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rd_ptr_wab_wrclk&lt;8&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">datafifo_full</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">datafifo_empty</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">binary_to_gray_rd</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">asynch_fifo_data</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">gray_to_binary_rd</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">asynch_fifo_data</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_memory</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_memory</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rd_ptr_wab_wrclk_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">asynch_fifo_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rd_ptr_wab_wrclk_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">asynch_fifo_2</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rd_ptr_wab_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">asynch_fifo_1</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rd_ptr_wab_gray_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wr_ptr_wab_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">asynch_fifo_1</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wr_ptr_wab_gray_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rd_ptr_wab_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">asynch_fifo_2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rd_ptr_wab_gray_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wr_ptr_wab_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">asynch_fifo_2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wr_ptr_wab_gray_8&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counter_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">descriptor_fetch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fetch_data</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">descriptor_process</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;proc_state_FSM_FFd1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/rd_ptr_wab_wrclk_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/rd_ptr_wab_wrclk_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/rd_ptr_wab_wrclk_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/rd_ptr_wab_wrclk_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/wr_ptr_wab_rdclk_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/wr_ptr_wab_rdclk_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/wr_ptr_wab_rdclk_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/wr_ptr_wab_rdclk_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/wr_ptr_wab_rdclk_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/data_avail_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/data_avail_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/data_avail_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/data_avail_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/data_avail_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/room_avail_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/room_avail_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/room_avail_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/room_avail_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_hdr/room_avail_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/fifo_empty</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_wrclk_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_wrclk_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_wrclk_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_wrclk_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_wrclk_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_wrclk_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_wrclk_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_wrclk_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_sync1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/rd_ptr_wab_gray_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/room_avail_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/room_avail_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/room_avail_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/room_avail_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/room_avail_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/room_avail_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/room_avail_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/room_avail_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/room_avail_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">asynch_fifo_data/fifo_full</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dmardtop</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="old" > (*) More than 100% of Device resources are used
+</msg>
+
+</messages>
+

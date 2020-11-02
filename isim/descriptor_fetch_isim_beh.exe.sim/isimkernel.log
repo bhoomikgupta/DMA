@@ -1,0 +1,29 @@
+Command line:
+   descriptor_fetch_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63585
+
+Thu Nov 28 22:29:24 2019
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5160.07 Meg
+
+ Total Signals          : 27
+ Total Nets             : 223
+ Total Signal Drivers   : 11
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 386
+Total Line Count : 72
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5160.07 Meg
+
+Thu Nov 28 22:29:42 2019
+

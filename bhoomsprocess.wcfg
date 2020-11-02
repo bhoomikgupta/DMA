@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Bhoomik/OneDrive/vhdl/encoder/BhoomsDMA/DMA/descriptor_process_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="descriptor_process" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/descriptor_process/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/rstb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rstb</obj_property>
+      <obj_property name="ObjectShortName">rstb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/descp_available" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">descp_available</obj_property>
+      <obj_property name="ObjectShortName">descp_available</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/descriptor" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">descriptor[63:0]</obj_property>
+      <obj_property name="ObjectShortName">descriptor[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/ack_fetch_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ack_fetch_data</obj_property>
+      <obj_property name="ObjectShortName">ack_fetch_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/datafifo_room" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datafifo_room[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datafifo_room[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/transfer_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">transfer_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">transfer_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/begin_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">begin_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">begin_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/descp_rden" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">descp_rden</obj_property>
+      <obj_property name="ObjectShortName">descp_rden</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/fetch_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_data</obj_property>
+      <obj_property name="ObjectShortName">fetch_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/addr_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/length_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">length_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">length_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/subtract_room" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">subtract_room</obj_property>
+      <obj_property name="ObjectShortName">subtract_room</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/proc_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">proc_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">proc_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/proc_state_nxt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">proc_state_nxt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">proc_state_nxt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/fetch_data_nxt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_data_nxt</obj_property>
+      <obj_property name="ObjectShortName">fetch_data_nxt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/addr_data_nxt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_data_nxt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_data_nxt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/length_data_nxt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">length_data_nxt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">length_data_nxt[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/remain_lenth" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">remain_lenth[31:0]</obj_property>
+      <obj_property name="ObjectShortName">remain_lenth[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/remain_lenth_nxt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">remain_lenth_nxt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">remain_lenth_nxt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/subtract_room_nxt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">subtract_room_nxt</obj_property>
+      <obj_property name="ObjectShortName">subtract_room_nxt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/IDLE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/INIT_ATTR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">INIT_ATTR[2:0]</obj_property>
+      <obj_property name="ObjectShortName">INIT_ATTR[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/DECIDE_LENGTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DECIDE_LENGTH[2:0]</obj_property>
+      <obj_property name="ObjectShortName">DECIDE_LENGTH[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/ASSERT_REQ" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ASSERT_REQ[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ASSERT_REQ[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/WAIT_ACK" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WAIT_ACK[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT_ACK[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/descriptor_process/PKT_LENGTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PKT_LENGTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PKT_LENGTH[31:0]</obj_property>
+   </wvobject>
+</wave_config>

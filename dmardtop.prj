@@ -1,0 +1,8 @@
+verilog work "sram.v"
+verilog work "gray_to_binary.v"
+verilog work "binary_to_gray.v"
+verilog work "roomavail_calc.v"
+verilog work "descriptor_process.v"
+verilog work "descriptor_fetch.v"
+verilog work "asynch_fifo.v"
+verilog work "dmardtop.v"
